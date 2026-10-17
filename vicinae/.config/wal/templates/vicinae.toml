@@ -1,0 +1,83 @@
+# Vicinae theme, a pywal16 template. wal renders it to ~/.cache/wal/vicinae.toml and
+# post-wal.sh copies it into Vicinae's themes folder as wal.toml, which Vicinae reloads
+# live; pick "wal" in Vicinae's settings.
+#
+# Only background, foreground, cursor and color0-15 are used, so a wallpaper scheme fits
+# as well as theming/themes/; theming/wal.py lists each slot's role. Surfaces are the
+# background lightened: mantle 3, base 5, surface0 9, surface1 14, surface2 20.
+
+[meta]
+version = 1
+name = "Wal"
+description = "pywal16 colors. A pywal16 template (vicinae.toml in the dotfiles wal package), copied into Vicinae's themes folder by post-wal.sh"
+variant = "dark"
+
+[colors.core]
+background = "{background.lighten(5)}"
+secondary_background = "{background.lighten(3)}"
+foreground = "{foreground}"
+border = "{background.lighten(14)}"
+accent = "{color5}"
+accent_foreground = "{background.lighten(5)}"
+
+[colors.main_window]
+border = "{background.lighten(14)}"
+
+[colors.settings_window]
+border = "{background.lighten(14)}"
+
+# Hue names are Vicinae's; orange has no slot, so it takes color9 (parameter)
+[colors.accents]
+blue = "{color4}"
+green = "{color2}"
+magenta = "{color13}"
+orange = "{color9}"
+purple = "{color5}"
+red = "{color1}"
+yellow = "{color3}"
+cyan = "{color6}"
+
+[colors.text]
+muted = "{color7}"
+placeholder = "{color8}"
+danger = "{color1}"
+success = "{color10}"
+selection = { background = "{background.lighten(20)}", foreground = "{foreground}" }
+
+[colors.text.links]
+default = "{color4}"
+visited = "{color5}"
+
+[colors.input]
+border = "{background.lighten(14)}"
+border_focus = "{color5}"
+border_error = "{color1}"
+
+[colors.button.primary]
+background = "{background.lighten(9)}"
+foreground = "{foreground}"
+hover = { background = "{background.lighten(14)}" }
+focus = { outline = "{color5}" }
+
+[colors.list.item.hover]
+foreground = "{foreground}"
+secondary_foreground = "{color7}"
+
+[colors.list.item.selection]
+background = "{background.lighten(9)}"
+foreground = "{color15}"
+secondary_background = "{background.lighten(14)}"
+secondary_foreground = "{color7}"
+
+# overlay1: color8 (overlay0) lightened 15
+[colors.grid.item]
+background = "{background.lighten(9)}"
+hover = { outline = "{color8.lighten(15)}" }
+selection = { outline = "{color5}" }
+
+[colors.scrollbars]
+background = "{background.lighten(20)}"
+
+[colors.loading]
+bar = "{color10}"
+spinner = "{foreground}"
