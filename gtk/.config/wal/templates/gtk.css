@@ -1,10 +1,10 @@
 /* GTK 3/4 colors, a pywal16 template. wal renders it to ~/.cache/wal/gtk.css and
-   post-wal.sh copies it to ~/.config/gtk-3.0/gtk.css and ~/.config/gtk-4.0/gtk.css,
+   post-wal.d/gtk.sh copies it to ~/.config/gtk-3.0/gtk.css and ~/.config/gtk-4.0/gtk.css,
    which GTK loads on top of the adw-gtk3 theme (GTK 3) and libadwaita (GTK 4). Running
    apps keep their colors until restarted.
 
    Only background, foreground, cursor and color0-15 are used, so a wallpaper scheme fits
-   as well as theming/themes/; theming/wal.py lists each slot's role. Surfaces are the
+   as well as the committed Wisteria Dusk one. Surfaces are the
    background lightened: mantle 3, base 5, surface0 9, surface1 14, surface2 20. */
 
 @define-color accent_color {color5};

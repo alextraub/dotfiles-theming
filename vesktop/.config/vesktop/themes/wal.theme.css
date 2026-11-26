@@ -4,8 +4,8 @@
  * @author dotfiles
 */
 
-/* Colors are the CSS variables of pywal16's built-in colors.css, which the wal package's
-   post-wal.sh copies into this folder as wal-colors.css after every `wal`. */
+/* Colors are the CSS variables of pywal16's built-in colors.css, which this package's
+   post-wal.d/vesktop.sh copies into this folder as wal-colors.css after every `wal`. */
 
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 /* The colors. Also enable "Wal colors" as its own theme: Vencord reloads enabled themes under
@@ -52,7 +52,7 @@ body {
 
 :root {
     /* Only background, foreground and color0-15 are used, so a wallpaper scheme fits as well
-       as theming/themes/; theming/wal.py lists each slot's role. Surfaces are the background
+       as the committed Wisteria Dusk one. Surfaces are the background
        mixed with white, the same as pywal's lighten(): mantle 3%, base 5%, surface0 9%,
        surface1 14%; overlay2 is color8 (overlay0) lightened 30% */
     --wal-mantle: color-mix(in srgb, var(--background) 97%, white);

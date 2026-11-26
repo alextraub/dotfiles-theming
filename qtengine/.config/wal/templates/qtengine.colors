@@ -1,7 +1,7 @@
 # Qt colors (a KDE color scheme), a pywal16 template. wal renders it to
 # ~/.cache/wal/qtengine.colors, which the qtengine package's config.json selects; Qt apps
 # read it when they start. Only background, foreground and color0-15 are used, so a
-# wallpaper scheme fits as well as theming/themes/; theming/wal.py lists each slot's role.
+# wallpaper scheme fits as well as the committed Wisteria Dusk one.
 # Surfaces are the background lightened: mantle 3, base 5, surface0 9, surface1 14,
 # surface2 20. Selection colors are the slot darkened 70.
 

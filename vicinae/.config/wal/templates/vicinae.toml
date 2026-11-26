@@ -1,15 +1,15 @@
 # Vicinae theme, a pywal16 template. wal renders it to ~/.cache/wal/vicinae.toml and
-# post-wal.sh copies it into Vicinae's themes folder as wal.toml, which Vicinae reloads
+# post-wal.d/vicinae.sh copies it into Vicinae's themes folder as wal.toml, which Vicinae reloads
 # live; pick "wal" in Vicinae's settings.
 #
 # Only background, foreground, cursor and color0-15 are used, so a wallpaper scheme fits
-# as well as theming/themes/; theming/wal.py lists each slot's role. Surfaces are the
+# as well as the committed Wisteria Dusk one. Surfaces are the
 # background lightened: mantle 3, base 5, surface0 9, surface1 14, surface2 20.
 
 [meta]
 version = 1
 name = "Wal"
-description = "pywal16 colors. A pywal16 template (vicinae.toml in the dotfiles wal package), copied into Vicinae's themes folder by post-wal.sh"
+description = "pywal16 colors. A pywal16 template (vicinae.toml in the theming repo's vicinae package), copied into Vicinae's themes folder by post-wal.d/vicinae.sh"
 variant = "dark"
 
 [colors.core]
